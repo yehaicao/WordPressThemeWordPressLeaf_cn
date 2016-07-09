@@ -1,0 +1,449 @@
+/*
+Theme Name: Codilight Lite
+Description: Used to style the TinyMCE editor.
+*/
+
+html .mceContentBody {
+	font-size: 16px;
+	max-width: 700px;
+}
+
+body {
+	color: #555555;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	line-height: 1.6;
+	font-size: 16px;
+	font-size: 1rem;
+	vertical-align: baseline;
+}
+
+
+/* Links
+--------------------------------------------------------------*/
+a {
+	color: #46a28d;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #494949;
+}
+
+/* Paragraphy
+--------------------------------------------------------------*/
+p {
+	margin-top: 0;
+	margin-bottom: 16px;
+	margin-bottom: 1rem;
+}
+
+/* Heading
+--------------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: "Raleway", Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	line-height: 1.4;
+	color: #333333;
+	margin-top: 0;
+	margin-bottom: 16px;
+	margin-bottom: 1rem;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .h1 a, .h2 a, .h3 a, .h4 a, .h5 a, .h6 a {
+	color: #333333;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .h1 a:hover, .h2 a:hover, .h3 a:hover, .h4 a:hover, .h5 a:hover, .h6 a:hover {
+	color: #46a28d;
+	text-decoration: none;
+}
+
+h1,
+.h1 {
+	font-size: 38px;
+	font-size: 2.375rem;
+	line-height: 1.2;
+}
+
+h2,
+.h2 {
+	font-size: 32px;
+	font-size: 2rem;
+}
+
+h3,
+.h3 {
+	font-size: 24px;
+	font-size: 1.5rem;
+}
+
+h4,
+.h4 {
+	font-weight: normal;
+	font-size: 18px;
+	font-size: 1.125rem;
+}
+
+h5,
+.h5 {
+	font-size: 15px;
+	font-size: 0.9375rem;
+}
+
+h6,
+.h6 {
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-size: 0.8125rem;
+}
+
+/* List
+--------------------------------------------------------------*/
+address,
+dl,
+ol,
+p,
+ul {
+	margin-bottom: 1rem;
+}
+
+dl,
+ol,
+p,
+pre,
+ul {
+	margin-top: 0;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0px 0px 16px 0px;
+	margin:  0rem 0rem 1rem 0rem;
+}
+
+ul,
+ol,
+dl {
+	margin-top: 0;
+	margin-bottom: 16px;
+	margin-bottom: 1rem;
+}
+
+/* Horizontal rules
+--------------------------------------------------------------*/
+hr {
+	margin-bottom: 16px;
+	margin-bottom: 1rem;
+	border: 0;
+	border-top: 1px solid #e9e9e9;
+}
+
+/* Content
+--------------------------------------------------------------*/
+img {
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+blockquote {
+	clear: both;
+	margin: 20px 0px 25px;
+	margin:  1.25rem 0rem 1.5625rem;
+	box-shadow: 2px 2px 13px #eeeeee;
+	border: 1px solid #e9e9e9;
+	border-left: 4px solid #46a28d;
+	padding: 20px 25px;
+	padding:  1.25rem 1.5625rem;
+}
+
+blockquote p:last-child {
+	margin-bottom: 3px;
+}
+
+blockquote cite {
+	font-style: normal;
+	margin-bottom: 16px;
+	margin-bottom: 1rem;
+	font-size: 13px;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+figure {
+	margin: 0;
+}
+
+address {
+	margin-bottom: 16px;
+	margin-bottom: 1rem;
+	font-style: normal;
+	line-height: inherit;
+}
+
+tt,
+kbd,
+pre,
+code,
+samp,
+var {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	background-color: #f8f9f9;
+	padding: 7px;
+	padding: 0.4375rem;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+pre {
+	overflow: auto;
+	white-space: pre-wrap;
+	max-width: 100%;
+	line-height: 1.7;
+	margin: 0px 0px 16px;
+	margin:  0rem 0rem 1rem;
+	padding: 16px;
+	padding: 1rem;
+}
+
+details summary {
+	font-weight: bold;
+	margin-bottom: 16px;
+	margin-bottom: 1rem;
+}
+
+details :focus {
+	outline: none;
+}
+
+abbr,
+acronym,
+dfn {
+	cursor: help;
+	font-size: 15px;
+	font-size: 0.9375rem;
+	text-transform: uppercase;
+	border-bottom: 1px dotted #e9e9e9;
+	letter-spacing: 1px;
+}
+
+mark {
+	background-color: #f8f9f9;
+	text-decoration: none;
+}
+
+small {
+	font-size: 82%;
+}
+
+big {
+	font-size: 125%;
+}
+
+/* Table
+--------------------------------------------------------------*/
+table {
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 16px;
+	margin-bottom: 1rem;
+	border: 1px solid #e9e9e9;
+}
+
+table th,
+table td {
+	padding: 12px;
+	padding: 0.75rem;
+	line-height: 1.5;
+	vertical-align: top;
+	border: 1px solid #e9e9e9;
+}
+
+table thead th,
+table thead td {
+	vertical-align: bottom;
+	border-bottom: 2px solid #e9e9e9;
+}
+
+table tbody + tbody {
+	border-top: 2px solid #e9e9e9;
+}
+
+/* Alignments */
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Clearings */
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+	content: "";
+	display: table;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+	clear: both;
+}
+
+/* WP Caption */
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption .wp-caption-text , .wp-caption-dd {
+	margin: 0.8075em 0;
+	font-style: italic;
+}
+
+.wp-caption-text, .wp-caption-dd {
+	text-align: center;
+}
+
+/* Gallery */
+.gallery {
+	margin-bottom: 1.5em;
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+
+.gallery-columns-2 .gallery-item img {
+	width: 100%;
+	padding: 0.5px;
+}
+
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
+}
+
+.gallery-columns-3 .gallery-item img {
+	width: 100%;
+	padding: 0.5px;
+}
+
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+
+.gallery-columns-4 .gallery-item img {
+	width: 100%;
+	padding: 0.5px;
+}
+
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+
+.gallery-columns-5 .gallery-item img {
+	width: 100%;
+	padding: 0.5px;
+}
+
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+
+.gallery-columns-6 .gallery-item img {
+	width: 100%;
+	padding: 0.5px;
+}
+
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+
+.gallery-caption {
+	display: block;
+}
+
+/* Media */
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}

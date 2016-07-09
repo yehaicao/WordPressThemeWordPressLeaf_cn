@@ -1,0 +1,402 @@
+// main: style.scss
+/*--------------------------------------------------------------
+# Site Navigation & Responsive Menu
+--------------------------------------------------------------*/
+.ft-menu, .ft-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: none;
+    @include media-breakpoint-up(lg) {
+        display: block;
+    }
+}
+// Essential Styles
+.ft-menu {
+    float: right;
+    @extend .clearfix;
+    ul {
+        position: absolute;
+        display: none;
+        top: 100%;
+        left: 0px;
+        z-index: 80;
+    }
+    ul ul {
+        top: 0px;
+        left: 100%;
+        padding-left: 1px;
+        z-index: 90;
+    }
+    li {
+        position: relative;
+    }
+    > li {
+        float: left;
+    }
+    li:hover > ul,li.sfHover > ul {
+        display: block;
+    }
+    a {
+        display: block;
+        position: relative;
+    }
+}
+// Skin
+.ft-menu {
+    position: relative;
+    &:before {
+        content: "";
+        display: block;
+        height: 100%;
+        width: 1px;
+        position: absolute;
+        bottom: 1px;
+        right: -1px;
+        background: rgba(255, 255, 255, 0.15);
+        z-index: 10;
+    }
+    &:after {
+        content: "";
+        display: block;
+        height: 100%;
+        width: 1px;
+        position: absolute;
+        bottom: 1px;
+        right: 0px;
+        background: rgba(0, 0, 0, 0.1);
+        z-index: 10;
+    }
+    ul {
+        min-width: 14em; // allow long menu items to determine submenu width
+        *width: 14em;    //no auto sub width for IE7, see white-space comment below
+        border-top: none;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+        ul {
+            border-top: 1px solid $border;
+            margin-top: -1px;
+        }
+    }
+    li {
+        white-space: nowrap;  // no need for Supersubs plugin
+        *white-space: normal; // ...unless you support IE7 (let it wrap)
+        -webkit-transition: background .2s;
+        transition: background .2s;
+    }
+    > li {
+        margin-right: 1px;
+        &:before {
+            content: "";
+            display: block;
+            height: 100%;
+            width: 1px;
+            position: absolute;
+            bottom: 1px;
+            left: -2px;
+            background: rgba(255, 255, 255, 0.15);
+            z-index: 10;
+        }
+        &:after {
+            content: "";
+            display: block;
+            height: 100%;
+            width: 1px;
+            position: absolute;
+            bottom: 1px;
+            left: -1px;
+            background: rgba(0, 0, 0, 0.1);
+            z-index: 10;
+        }
+    }
+
+    li:hover {
+        // only transition out, not in
+        -webkit-transition: none;
+        transition: none;
+    }
+
+    a {
+        color: #FFFFFF;
+        font-family: $font_heading;
+        padding-left: 22px;
+        padding-right: 22px;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+        text-decoration: none;
+        zoom: 1;
+        z-index: 50;
+        &:hover {
+            color: $primary;
+            background: #FFFFFF;
+        }
+    }
+    ul li {
+        line-height: 30px;
+        border-bottom: 1px solid $border;
+        a {
+            padding: 10px 23px;
+            color: #888888;
+            font-size: 16px;
+            font-weight: 500;
+            text-transform: none;
+            background: #ffffff;
+            letter-spacing: 0;
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+
+    ul li.current-menu-item > a {
+        color: $primary;
+    }
+
+    /* Arrows */
+    ul li.menu-item-has-children > a,
+    ul li.page_item_has_children > a, {
+		padding-right: 28px;
+		*padding-right: 22px; // no CSS arrows for IE7 (lack pseudo-elements)
+	}
+	ul li.menu-item-has-children > a:after,
+    ul li.page_item_has_children > a:after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		right: 10px;
+		margin-top: -14px;
+		height: 0;
+		width: 0;
+		// order of following 3 rules important for fallbacks to work
+		border: 6px solid transparent;
+		border-top-color: #eeeeee; // edit this to suit design (no rgba in IE8)
+		border-top-color: rgba(0,0,0,.3);
+	}
+	ul li.menu-item-has-children > a:after,
+    ul li.page_item_has_children > a:after {
+		margin-top: -5px;
+		margin-right: 0px;
+		border-color: transparent;
+		border-left-color: #dddddd; // edit this to suit design (no rgba in IE8)
+		border-left-color: rgba(0,0,0,.2);
+	}
+
+}
+
+// Mobile Navigation Toggle
+.nav-toggle {
+    display: none;
+    float: left;
+    position: relative;
+    @include media-breakpoint-down(lg) {
+        display: inline-block;
+    }
+    &:before {
+        content: "";
+        display: block;
+        height: 100%;
+        width: 1px;
+        position: absolute;
+        bottom: 1px;
+        right: -2px;
+        background: rgba(255, 255, 255, 0.15);
+        z-index: 10;
+    }
+    &:after {
+        content: "";
+        display: block;
+        height: 100%;
+        width: 1px;
+        position: absolute;
+        bottom: 1px;
+        right: -1px;
+        background: rgba(0, 0, 0, 0.1);
+        z-index: 10;
+    }
+}
+#nav-toggle {
+    position: relative;
+    width: 56px;
+    white-space: nowrap;
+    color: transparent;
+    -webkit-transition: all 0s ease-out 0s;
+    transition: all 0s ease-out 0s;
+    display: inline-block;
+    float: left;
+    &:before {
+        content: "";
+        display: block;
+        height: 100%;
+        width: 1px;
+        position: absolute;
+        bottom: 1px;
+        left: -2px;
+        background: rgba(255, 255, 255, 0.15);
+        z-index: 10;
+    }
+    &:after {
+        content: "";
+        display: block;
+        height: 100%;
+        width: 1px;
+        position: absolute;
+        bottom: 1px;
+        left: -1px;
+        background: rgba(0, 0, 0, 0.1);
+        z-index: 10;
+    }
+        span {
+            position: absolute;
+            top: 52%;
+            left: 18px;
+            margin-top: -2px;
+            -webkit-transition: background 0.2s;
+            transition: background 0.2s;
+            display: inline-block;
+            height: 2px;
+            width: 20px;
+            background: #FFFFFF;
+            -webkit-transition: all 0s ease-out 0s;
+        	transition: all 0s ease-out 0s;
+            &:before {
+                top: -6px;
+            }
+            &:after {
+                top: 6px;
+            }
+            &:before, &:after {
+                position: absolute;
+                display: inline-block;
+                height: 2px;
+                width: 20px;
+                background: #FFFFFF;
+                content: '';
+                right: 0;
+                -webkit-transform: translateZ(0);
+                -ms-transform: translateZ(0);
+                transform: translateZ(0);
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+                -webkit-transform-origin: 0% 50%;
+                -ms-transform-origin: 0% 50%;
+                transform-origin: 0% 50%;
+                -webkit-transition: -webkit-transform 0.2s;
+                transition: -webkit-transform 0.2s;
+                transition: transform 0.2s;
+                transition: transform 0.2s, -webkit-transform 0.2s;
+            }
+        }
+    &:hover {
+        background: #ffffff;
+        -webkit-transition: all 0s ease-out 0s;
+    	transition: all 0s ease-out 0s;
+        span {
+            background: $primary;
+            &:before, &:after {
+                background: $primary;
+            }
+        }
+    }
+}
+#nav-toggle.nav-is-visible {
+    background: #FFFFFF;
+    &:hover span {
+        background: #FFFFFF;
+    }
+    span {
+        &:before {
+            -webkit-transform: translateX(3px) translateY(-2px) rotate(45deg);
+                -ms-transform: translateX(3px) translateY(-2px) rotate(45deg);
+                    transform: translateX(3px) translateY(-2px) rotate(45deg);
+        }
+        &:after {
+            -webkit-transform: translateX(3px) translateY(0px) rotate(-45deg);
+                -ms-transform: translateX(3px) translateY(0px) rotate(-45deg);
+                    transform: translateX(3px) translateY(0px) rotate(-45deg);
+        }
+        &:before, &:after {
+            background: $primary;
+        }
+    }
+}
+
+/* Mobile Navigation */
+.mobile-navigation {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    display: none;
+    overflow: hidden;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            position: relative;
+            a {
+                padding: 11px 15px 10px;
+                display: block;
+                color: #888888;
+                font-size: 16px;
+                font-family: $font_heading;
+                font-weight: 500;
+                text-transform: none;
+                background: #ffffff;
+                letter-spacing: 0;
+                border-bottom: 1px solid $border;
+                &:hover {
+                    color: $primary;
+                    text-decoration: none;
+                    background: $meta_bg;
+                }
+            }
+        }
+        li li a {
+            padding-left: 35px;
+            position: relative;
+            &:before {
+                content: "–";
+                color: #888888;
+                display: block;
+                position: absolute;
+                left: 15px;
+                top: 9px;
+                //transform: rotate(180deg);
+                font-weight: 100;
+            }
+        }
+        li li li a {
+            padding-left: 55px;
+            &:before {
+                left: 30px;
+            }
+        }
+    }
+    ul ul {
+        display: none;
+    }
+    .nav-toggle-subarrow{
+        display: block;
+        color: #999999;
+        border-left: 1px solid $border;
+        font-weight: normal;
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+        text-align: center;
+        padding: 6px 20px 6px;
+        z-index: 10;
+        font-size: 22px;
+    }
+    .nav-toggle-dropdown > .nav-toggle-subarrow .fa-angle-down:before {
+        content:"\f106" !important;
+    }
+    .nav-toggle-dropdown > ul{
+        display: block !important;
+    }
+}
+@include media-breakpoint-down(lg) {
+    .mobile-navigation.mobile-nav-open {
+        display: block;
+    }
+}

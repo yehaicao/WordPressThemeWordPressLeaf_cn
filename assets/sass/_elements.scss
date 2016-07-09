@@ -1,0 +1,358 @@
+// main: style.scss
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+/* Document
+--------------------------------------------------------------*/
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    font-size: 16px;
+    @include media-breakpoint-down(md) {
+        font-size: 15px;
+    }
+    // @include media-breakpoint-down(sm) {
+    //     font-size: 14px;
+    // }
+}
+body {
+    background: #f9f9f9;
+}
+
+/* Fonts
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+textarea {
+    font-family: $font_text;
+    @include rem('font-size', 15px);
+    line-height: 1.6;
+    color: $text;
+}
+
+/* Links
+--------------------------------------------------------------*/
+a {
+    color: $primary;
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+        color: $text;
+    }
+}
+
+/* Paragraphy
+--------------------------------------------------------------*/
+p {
+    margin-top: 0;
+    @include rem('margin-bottom', 16px);
+}
+
+/* Heading
+--------------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: $font_heading;
+    font-weight: 500;
+    line-height: 1.4;
+    color: $heading;
+    margin-top: 0;
+    @include rem('margin-bottom', 16px);
+    a {
+        color: $heading;
+        &:hover {
+            color: $primary;
+            text-decoration: none;
+        }
+    }
+}
+h1,
+.h1 {
+    @include rem('font-size', 38px);
+    line-height: 1.2;
+}
+h2,
+.h2 {
+    @include rem('font-size', 32px);
+}
+h3,
+.h3 {
+    @include rem('font-size', 24px);
+}
+h4,
+.h4 {
+    font-weight: normal;
+    @include rem('font-size', 18px);
+}
+h5,
+.h5 {
+    @include rem('font-size', 15px);
+}
+h6,
+.h6 {
+    font-weight: normal;
+    text-transform: uppercase;
+    @include rem('font-size', 13px);
+}
+
+/* List
+--------------------------------------------------------------*/
+address,
+dl,
+ol,
+p,
+ul {
+    margin-bottom: 1rem;
+}
+dl,
+ol,
+p,
+pre,
+ul {
+    margin-top: 0;
+}
+li > ul,
+li > ol {
+    margin-bottom: 0;
+    margin-left: 1.5em;
+}
+dt {
+    font-weight: bold;
+}
+dd {
+    @include rem('margin', 0px 0px 16px 0px);
+}
+ul,
+ol,
+dl {
+    margin-top: 0;
+    @include rem('margin-bottom', 16px);
+}
+
+/* Horizontal rules
+--------------------------------------------------------------*/
+hr {
+    @include rem('margin-bottom', 16px);
+    border: 0;
+    border-top: 1px solid $border;
+}
+
+/* Content
+--------------------------------------------------------------*/
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+b,
+strong {
+    font-weight: bold;
+}
+blockquote {
+    clear: both;
+    @include rem('margin', 20px 0px 25px);
+    box-shadow: 2px 2px 13px #eeeeee;
+    border: 1px solid $border;
+    border-left: 4px solid $primary;
+    @include rem('padding', 20px 25px);
+    p {
+        &:last-child {
+            margin-bottom: 3px;
+        }
+    }
+    cite {
+        font-style: normal;
+        @include rem('margin-bottom', 16px);
+        font-size: 13px;
+    }
+}
+dfn,
+cite,
+em,
+i {
+    font-style: italic;
+}
+figure {
+    margin: 0;
+}
+address {
+    @include rem('margin-bottom', 16px);
+    font-style: normal;
+    line-height: inherit;
+}
+tt,
+kbd,
+pre,
+code,
+samp,
+var {
+    font-family: $monaco;
+    background-color: $meta_bg;
+    @include rem('padding', 7px);
+    @include border-radius;
+}
+pre {
+    overflow: auto;
+    white-space: pre-wrap;
+    max-width: 100%;
+    line-height: 1.7;
+    @include rem('margin', 0px 0px 16px);
+    @include rem('padding', 16px);
+    @extend .break;
+}
+details {
+    summary {
+        font-weight: bold;
+        @include rem('margin-bottom', 16px);
+    }
+     :focus {
+        outline: none;
+    }
+}
+abbr,
+acronym,
+dfn {
+    cursor: help;
+    @include rem('font-size', 15px);
+    text-transform: uppercase;
+    border-bottom: 1px dotted $border;
+    letter-spacing: 1px;
+}
+mark {
+    background-color: $meta_bg;
+    text-decoration: none;
+}
+small {
+    font-size: 82%;
+}
+big {
+    font-size: 125%;
+}
+
+/* Table
+--------------------------------------------------------------*/
+table {
+    width: 100%;
+    max-width: 100%;
+    @include rem('margin-bottom', 16px);
+    border: 1px solid $border;
+}
+table th,
+table td {
+    @include rem('padding', 12px);
+    line-height: 1.5;
+    vertical-align: top;
+    border: 1px solid $border;
+}
+table thead th,
+table thead td {
+    vertical-align: bottom;
+    border-bottom: 2px solid $border;
+}
+table tbody + tbody {
+    border-top: 2px solid $border;
+}
+
+/* Form
+--------------------------------------------------------------*/
+form {
+    @include rem('margin-bottom', 16px);
+}
+
+fieldset{
+	@include rem('padding', 16px);
+	border: 1px solid $border;
+}
+
+input[type="reset"],input[type="submit"],input[type="submit"] {
+
+	cursor: pointer;
+	background: $primary;
+	border: none;
+	display: inline-block;
+	color: #FFFFFF;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	line-height: 1;
+	text-align: center;
+	@include rem('padding', 13px 20px);
+	@include border-radius(2px);
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 13px;
+	&:hover {
+		opacity: 0.8;
+	}
+
+}
+
+input[type="button"]:hover, input[type="button"]:focus,input[type="reset"]:hover,
+input[type="reset"]:focus,input[type="submit"]:hover,input[type="submit"]:focus,
+button:hover,button:focus {
+	cursor:pointer;
+}
+
+textarea {
+	resize: vertical;
+}
+select {
+	max-width: 100%;
+	overflow: auto;
+	vertical-align: top;
+	outline: none;
+	border: 1px solid $border;
+	@include rem('padding', 10px);
+}
+
+textarea,
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+	padding: 10px;
+	max-width: 100%;
+	border: 0px;
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 22px;
+    box-sizing: border-box;
+    border: 1px solid #dddddd;
+    &:focus {
+    	border-color: #bbbbbb;
+    }
+}
+
+button::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+input[type="radio"],input[type="checkbox"] {
+    @include rem('margin-bottom', 16px);
+}
+
+/*
+--------------------------------------------------------------*/
+/*
+--------------------------------------------------------------*/
+/*
+--------------------------------------------------------------*/
+/*
+--------------------------------------------------------------*/
+/*
+--------------------------------------------------------------*/

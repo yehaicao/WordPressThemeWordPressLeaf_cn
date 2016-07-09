@@ -1,0 +1,438 @@
+# Loco Gettext template
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Codilight Lite\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Mon Nov 23 2015 01:06:12 GMT+0700 (ICT)\n"
+"POT-Revision-Date: Mon Nov 23 2015 01:06:15 GMT+0700 (ICT)\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: ../404.php:18
+msgid "Ooops... Error 404"
+msgstr ""
+
+#: ../404.php:19
+msgid "Sorry, but the page you are looking for doesn't exist. "
+msgstr ""
+
+#: ../404.php:24
+msgid "Maybe try a search?"
+msgstr ""
+
+#: ../404.php:29
+msgid "Latest Posts"
+msgstr ""
+
+#: ../comments.php:31
+#, php-format
+msgctxt "comments title"
+msgid "1 Comment"
+msgid_plural "%1$s comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../comments.php:39 ../comments.php:59
+msgid "Comment navigation"
+msgstr ""
+
+#: ../comments.php:42 ../comments.php:62
+msgid "Older Comments"
+msgstr ""
+
+#: ../comments.php:43 ../comments.php:63
+msgid "Newer Comments"
+msgstr ""
+
+#: ../comments.php:75
+msgid "Comments are closed."
+msgstr ""
+
+#: ../footer.php:32
+#, php-format
+msgid "Copyright &copy; %1$s %2$s. All Rights Reserved."
+msgstr ""
+
+#: ../footer.php:34
+#, php-format
+msgid "Codilight Theme by %1$s"
+msgstr ""
+
+#: ../functions.php:51
+msgid "Primary Menu"
+msgstr ""
+
+#: ../functions.php:52
+msgid "Footer Menu"
+msgstr ""
+
+#: ../functions.php:101
+msgid "Default Sidebar"
+msgstr ""
+
+#: ../functions.php:112
+msgid "Home 1"
+msgstr ""
+
+#: ../functions.php:121
+msgid "Home 2"
+msgstr ""
+
+#: ../functions.php:130
+msgid "Home 3"
+msgstr ""
+
+#: ../functions.php:139
+msgid "Home 4"
+msgstr ""
+
+#. Translators: If there are characters in your language that are not
+#. supported by merriweather, translate this to 'off'. Do not translate
+#. into your own language.
+#: ../functions.php:185
+msgctxt "Open Sans font: on or off"
+msgid "on"
+msgstr ""
+
+#. Translators: If there are characters in your language that are not
+#. supported by Raleway, translate this to 'off'. Do not translate
+#. into your own language.
+#: ../functions.php:191
+msgctxt "Raleway font: on or off"
+msgid "on"
+msgstr ""
+
+#: ../header.php:25
+msgid "Skip to content"
+msgstr ""
+
+#: ../search.php:20
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#. Name of the template
+msgid "Fullwidth"
+msgstr ""
+
+#. Name of the template
+msgid "Homepage"
+msgstr ""
+
+#: ../inc/customizer-controls.php:52
+msgid ""
+"Upgrade to <a href=\"#\">OnePress Pro</a> to be able to change the section "
+"order and styling!"
+msgstr ""
+
+#: ../inc/customizer.php:43
+msgid "Site Logo"
+msgstr ""
+
+#: ../inc/customizer.php:45
+msgid "Your site logo"
+msgstr ""
+
+#: ../inc/customizer.php:56
+msgid "Site Layout"
+msgstr ""
+
+#: ../inc/customizer.php:66
+msgid "Default Sidebar Position"
+msgstr ""
+
+#: ../inc/customizer.php:80
+msgid "Front Page Posts Layout"
+msgstr ""
+
+#: ../inc/customizer.php:94
+msgid "Archive Page Posts Layout"
+msgstr ""
+
+#: ../inc/customizer.php:101
+msgid "Category, Tag, Author, Archive Page ..."
+msgstr ""
+
+#: ../inc/dashboard.php:9
+#, php-format
+msgid "%s Theme Dashboard"
+msgstr ""
+
+#: ../inc/dashboard.php:9
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: ../inc/dashboard.php:17
+#, php-format
+msgid "Welcome to %1s - Version %2s"
+msgstr ""
+
+#: ../inc/dashboard.php:30
+#, php-format
+msgid ""
+"%s supports the Theme Customizer for all theme settings. Click \"Customize\" "
+"to start customize your site."
+msgstr ""
+
+#: ../inc/dashboard.php:32
+msgid "Start Customize"
+msgstr ""
+
+#: ../inc/dashboard.php:37
+#, php-format
+msgid ""
+"Need any help to setup and configure %s? Please have a look at our "
+"documentations instructions."
+msgstr ""
+
+#: ../inc/dashboard.php:39
+msgid "http://docs.famethemes.com/category/30-codilight-lite"
+msgstr ""
+
+#: ../inc/dashboard.php:39
+msgid "Online Documentation"
+msgstr ""
+
+#: ../inc/dashboard.php:44
+#, php-format
+msgid ""
+"Support for %s WordPress theme is conducted through the WordPress free theme "
+"support forum."
+msgstr ""
+
+#: ../inc/dashboard.php:46
+msgid "https://wordpress.org/support/theme/codilight-lite"
+msgstr ""
+
+#: ../inc/template-tags.php:26
+#, php-format
+msgctxt "post date"
+msgid "%s"
+msgstr ""
+
+#: ../inc/template-tags.php:30
+#, php-format
+msgctxt "post author"
+msgid "%s"
+msgstr ""
+
+#: ../inc/template-tags.php:56
+msgid "Page"
+msgstr ""
+
+#: ../inc/template-tags.php:72
+#, php-format
+msgid "Page %1$s of %2$s"
+msgstr ""
+
+#: ../inc/template-tags.php:96
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#: ../inc/template-tags.php:101
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#: ../inc/template-tags.php:124
+msgid "Categories"
+msgstr ""
+
+#: ../inc/template-tags.php:131
+msgid "Tags"
+msgstr ""
+
+#: ../inc/template-tags.php:160
+msgid "Pingback:"
+msgstr ""
+
+#: ../inc/template-tags.php:160
+msgid "(Edit)"
+msgstr ""
+
+#: ../inc/template-tags.php:176
+msgid "Post author"
+msgstr ""
+
+#. translators: 1: date, 2: time
+#: ../inc/template-tags.php:182
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#: ../inc/template-tags.php:184
+msgid "Reply"
+msgstr ""
+
+#: ../inc/template-tags.php:185
+msgid "Edit"
+msgstr ""
+
+#: ../inc/template-tags.php:190
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../inc/widgets/block_1_widget.php:13
+msgid "Display posts with list or grid style for use on homepage."
+msgstr ""
+
+#: ../inc/widgets/block_1_widget.php:14
+msgid "FT Block 1 - Recent Posts"
+msgstr ""
+
+#: ../inc/widgets/block_1_widget.php:186 ../inc/widgets/block_2_widget.php:181 ..
+#: /inc/widgets/block_3_widget.php:176 ../inc/widgets/block_4_widget.php:163
+msgid "Widget Title:"
+msgstr ""
+
+#: ../inc/widgets/block_1_widget.php:190
+msgid "Posts block layout:"
+msgstr ""
+
+#: ../inc/widgets/block_1_widget.php:199 ../inc/widgets/block_2_widget.php:186 ..
+#: /inc/widgets/block_4_widget.php:168
+msgid "Multiselect Categories (all by default):"
+msgstr ""
+
+#: ../inc/widgets/block_1_widget.php:207 ../inc/widgets/block_2_widget.php:194 ..
+#: /inc/widgets/block_3_widget.php:188 ../inc/widgets/block_4_widget.php:176
+msgid "Number of posts to show:"
+msgstr ""
+
+#: ../inc/widgets/block_1_widget.php:212 ../inc/widgets/block_2_widget.php:200 ..
+#: /inc/widgets/block_3_widget.php:193 ../inc/widgets/block_4_widget.php:181
+msgid "Ignore Sticky Posts"
+msgstr ""
+
+#: ../inc/widgets/block_1_widget.php:215 ../inc/widgets/block_2_widget.php:203 ..
+#: /inc/widgets/block_3_widget.php:196 ../inc/widgets/block_4_widget.php:184
+msgid "Order By:"
+msgstr ""
+
+#: ../inc/widgets/block_1_widget.php:223 ../inc/widgets/block_2_widget.php:211 ..
+#: /inc/widgets/block_3_widget.php:204 ../inc/widgets/block_4_widget.php:192
+msgid ""
+"<strong>Upgrade To Pro:</strong> This is the Lite Version of this widget "
+"with only basic options. You can upgrade to <a target=\"_blank\" href=\"http:"
+"//www.famethemes.com/themes/codilight/\">Codilight Pro</a> for more features "
+"and options."
+msgstr ""
+
+#: ../inc/widgets/block_2_widget.php:13
+msgid "Slider posts widget for use on homepage."
+msgstr ""
+
+#: ../inc/widgets/block_2_widget.php:14
+msgid "FT Block 2 - Slider"
+msgstr ""
+
+#: ../inc/widgets/block_2_widget.php:196
+msgid "This widget only show posts has featured image."
+msgstr ""
+
+#: ../inc/widgets/block_3_widget.php:13
+msgid "Display a list of posts based on one parent category"
+msgstr ""
+
+#: ../inc/widgets/block_3_widget.php:14
+msgid "FT Block 3"
+msgstr ""
+
+#: ../inc/widgets/block_3_widget.php:180
+msgid "Block Category:"
+msgstr ""
+
+#: ../inc/widgets/block_4_widget.php:13
+msgid "Display a list of popular/lastest posts for use on sidebar."
+msgstr ""
+
+#: ../inc/widgets/block_4_widget.php:14
+msgid "FT Block 4"
+msgstr ""
+
+#: ../template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: ../template-parts/content-none.php:20
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: ../template-parts/content-none.php:24
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: ../template-parts/content-none.php:29
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: ../template-parts/content-page.php:21 ../template-parts/content-single.php:28 .
+#: ./template-parts/content.php:34
+msgid "Pages:"
+msgstr ""
+
+#. translators: %s: Name of current post
+#: ../template-parts/content-page.php:32
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: ../template-parts/content-single.php:45
+msgid "Previous article"
+msgstr ""
+
+#: ../template-parts/content-single.php:51
+msgid "Next article"
+msgstr ""
+
+#: ../template-parts/content.php:27
+#, php-format
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#. Name of the theme
+msgid "Codilight Lite"
+msgstr ""
+
+#. Theme URI of the theme
+msgid "http://www.famethemes.com/themes/codilight-lite"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"Codilight Lite is a news magazine style WordPress theme from FameThemes "
+"which is a perfect option to create any kind of magazine or blog websites."
+msgstr ""
+
+#. Author of the theme
+msgid "FameThemes"
+msgstr ""
+
+#. Author URI of the theme
+msgid "http://www.famethemes.com"
+msgstr ""

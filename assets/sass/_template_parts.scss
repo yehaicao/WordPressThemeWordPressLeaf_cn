@@ -1,0 +1,433 @@
+// main: style.scss
+
+/*- Entry Header
+--------------------------------------------------------------*/
+.single {
+    .entry-header {
+        .entry-title {
+            margin-bottom: 5px;
+            hyphens: auto;
+        }
+    }
+    .entry-thumb {
+        @include rem('margin-top', 25px);
+    }
+}
+
+/*- Page Header
+--------------------------------------------------------------*/
+.page-header {
+    @include rem('padding-bottom', 30px);
+    .page-title {
+        margin-bottom: 0px;
+        @include rem('font-size', 35px);
+        font-weight: 500;
+    }
+    .taxonomy-description {
+        @include rem('margin-top', 2px);
+        @include rem('margin-bottom', 0px);
+        p {
+            @include rem('margin-bottom', 0px);
+        }
+    }
+}
+
+/*- Entry Meta 1
+--------------------------------------------------------------*/
+.entry-meta {
+    color: $meta_color;
+    @include rem('font-size', 12px);
+    span {
+        @include rem('margin-right', 12px);
+    }
+    a {
+        color: $meta_color;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    .author a {
+        font-weight: bold;
+        color: $heading;
+    }
+    .comments-link {
+        float: right;
+        margin-right: 0px;
+        @include rem('font-size', 12px);
+        i {
+            margin-right: 2px;
+            position: relative;
+            top: -1px;
+        }
+    }
+    a:hover {
+        color: $primary;
+    }
+}
+
+/*- Entry Footer
+--------------------------------------------------------------*/
+.entry-taxonomies {
+
+    @include rem('font-size', 13px);
+    line-height: 25px;
+    span {
+        float: left;
+        @include rem('padding', 0px 13px );
+        @include rem('font-size', 11px);
+        @include rem('margin-right', 4px );
+        font-weight: 600;
+        background: $primary;
+        color: #FFFFFF;
+        text-transform: uppercase;
+    }
+    .entry-tags {
+        @include rem('margin-top', 2px);
+    }
+    .post-categories, .post-tags {
+        list-style: none;
+        padding: 0px;
+        margin: 0;
+        li {
+            display: inline;
+            margin: 0px;
+            a {
+                line-height: 24px;
+                display: inline-block;
+                border: 1px solid $border;
+                margin-right: 2px;
+                @include rem('margin-right', 0px );
+                @include rem('margin-bottom', 3px );
+                @include rem('padding', 0px 8px );
+                color: $text;
+                &:hover {
+                    border-color: $primary;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+/*- Entry Post Navigation
+--------------------------------------------------------------*/
+.post-navigation {
+    @include rem('margin-top', 25px);
+    span {
+        @include rem('font-size', 13px);
+        color: $meta_color;
+        margin-bottom: 3px;
+        display: block;
+    }
+    .post-navi-next {
+        text-align: right;
+        @include media-breakpoint-down(md) {
+            text-align: left;
+        }
+    }
+    .h5 {
+        font-weight: 600;
+    }
+}
+
+/*- Paginate
+--------------------------------------------------------------*/
+.ft-paginate {
+    display: block;
+    @include rem('margin-top', 30px);
+    @include rem('line-height', 38px);
+    span.current, a {
+        line-height: 20px;
+        padding: 5px 14px 6px;
+        border: 1px solid $border;
+        color: $text;
+        @include border-radius(2px);
+        margin-right: 1px;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    a:hover {
+        border-color: $primary;
+    }
+    span.current {
+        background: $primary;
+        border-color: $primary;
+        color: #FFFFFF;
+    }
+    span.total-pages {
+        float: right;
+        @include rem('font-size', 13px);
+        color: $meta_color;
+        font-style: italic;
+    }
+    .pagination {
+      float: left;
+    }
+    &::after {
+      @include clearfix();
+      clear: both;
+    }
+
+}
+
+/* Comments
+--------------------------------------------------------------*/
+#comments {
+    @include rem('margin-top', 30px);
+    @include rem('padding-top', 25px);
+    border-top: 1px solid $border;
+	.comment-list {
+		list-style: none;
+		padding-left: 0px;
+		.pingback {
+			border-bottom: 1px solid $border;
+            @include rem('padding', 10px 0px);
+			margin: 0;
+			p { margin : 0px;}
+		}
+		.pingback:last-child {
+            @include rem('margin-bottom', 25px);
+		}
+
+	}
+	.comment {
+		list-style: none;
+        @include rem('margin-top', 25px);
+        &:last-child {
+            @include rem('margin-bottom', 25px);
+        }
+		.avatar {
+			width: 50px;
+			float: left;
+            margin-top: 5px;
+		}
+		.comment-wrapper {
+            @include rem('margin-left', 75px);
+			position: relative;
+            .comment-content {
+                @include rem('margin-top', 5px);
+                p {
+                    margin-bottom: 10px;
+                }
+                p:last-child {
+                    margin-bottom: 0px;
+                }
+            }
+			.comment-meta cite span, .comment-meta .comment-time, .comment-meta .comment-reply-link, .comment-meta .comment-edit-link, .comment-reply-login {
+				color: $meta_color;
+				font-size: 12px ;
+				&:hover {
+					color: $primary;
+				}
+				&:after {
+					content: "·";
+					padding: 0px 5px;
+				}
+
+			}
+            .comment-reply-login {
+            }
+			.comment-meta a:last-child {
+				&:after {
+					content: "";
+				}
+			}
+			.comment-meta cite .fn {
+                font-style: normal;
+                margin-right: 10px;
+                @include rem('font-size', 14px);
+                a {
+                    color: $text;
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+			}
+			a {
+				text-decoration: none;
+			}
+		}
+		.children {
+            padding-left: 0px;
+            @include rem('margin-left', 75px);
+            position: relative;
+            @include media-breakpoint-down(md) {
+                @include rem('margin-left', 0px);
+            }
+            .comment {
+                position: relative;
+                &:before {
+                    content: "";
+                    height: 50px;
+                    width: 1px;
+                    background: $border;
+                    display: block;
+                    position: absolute;
+                    left: -75px;
+                    top: 5px;
+                }
+                &:after {
+                    content: "";
+                    height: 1px;
+                    width: 50px;
+                    background: $border;
+                    display: block;
+                    position: absolute;
+                    left: -75px;
+                    top: 30px;
+                }
+                @include media-breakpoint-down(md) {
+                    &:before, &:after {
+                        content: none;
+                    }
+                }
+            }
+			.children {
+				@include rem('margin-left', 75px);
+                @include media-breakpoint-down(md) {
+                    @include rem('margin-left', 0px);
+                }
+                .comment {
+                    position: relative;
+                    &:before {
+                        content: "";
+                        height: 50px;
+                        width: 1px;
+                        background: $border;
+                        display: block;
+                        position: absolute;
+                        left: -75px;
+                        top: 0px;
+                    }
+                    &:after {
+                        content: "";
+                        height: 1px;
+                        width: 50px;
+                        background: $border;
+                        display: block;
+                        position: absolute;
+                        left: -75px;
+                        top: 25px;
+                    }
+                    @include media-breakpoint-down(md) {
+                        &:before, &:after {
+                            content: none;
+                        }
+                    }
+                }
+				.children {
+                    @include media-breakpoint-down(md) {
+                        @include rem('margin-left', 0px);
+                    }
+					@include rem('margin-left', 0px);
+                    .comment {
+                        position: relative;
+                        &:before {
+                            content: "";
+                            height: 50px;
+                            width: 1px;
+                            background: $border;
+                            display: block;
+                            position: absolute;
+                            left: -75px;
+                            top: 0px;
+                        }
+                        &:after {
+                            content: "";
+                            height: 1px;
+                            width: 50px;
+                            background: $border;
+                            display: block;
+                            position: absolute;
+                            left: -75px;
+                            top: 25px;
+                        }
+                        @include media-breakpoint-down(md) {
+                            &:before, &:after {
+                                content: none;
+                            }
+                        }
+                    }
+				}
+			}
+		}
+	}
+    .bypostauthor {
+        .comment-wrapper {
+            @include rem('padding', 15px 20px);
+            border: 1px solid $border;
+            position: relative;
+            top: 5px;
+        }
+    }
+	.form-allowed-tags {
+		display: none;
+	}
+	a {
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.right-sidebar .comment-respond textarea,
+.left-sidebar .comment-respond textarea {
+	width: 100%;
+}
+/* Comment Form
+--------------------------------------------------------------*/
+#respond {
+    @include rem('margin-top', 25px);
+	.comment-form label {
+		display: block;
+		margin-bottom: 4px;
+	}
+	.form-allowed-tags {
+		font-size: 12px;
+		code {
+			background: none;
+		}
+	}
+	.comment-reply-title {
+        @include rem('font-size', 17px);
+        @include rem('margin-bottom', 20px);
+		letter-spacing: 1px;
+	    text-transform: uppercase;
+	}
+	.comment-notes {
+		display: none;
+	}
+	label {
+        cursor: pointer;
+	}
+}
+
+/*- 404 Page.
+--------------------------------------------------------------*/
+.error-404 {
+    .page-header {
+        text-align: center;
+        @include rem('padding', 40px 0px);
+        .page-title {
+            @include rem('margin-bottom', 10px);
+            font-weight: 900;
+        }
+        .page-subtitle {
+            color: $meta_color;
+        }
+    }
+}
+.search404 {
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+}
+.latest-posts-404 {
+    @include rem('padding', 50px 0px 0px 0px);
+    > h4 {
+        font-weight: bold;
+    }
+}

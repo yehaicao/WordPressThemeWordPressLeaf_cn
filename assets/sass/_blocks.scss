@@ -1,0 +1,320 @@
+// main: style.scss
+
+/* # Home Page Widget Area
+--------------------------------------------------------------*/
+.home-sidebar {
+    @include rem('margin-bottom', 45px);
+    .home-widget {
+        @include rem('margin-bottom', 45px);
+        &:last-of-type {
+            margin-bottom: 0px;
+        }
+    }
+}
+.home-sidebar.home-sidebar-2-3 {
+    margin-bottom: 0;
+}
+.home-sidebar.home-sidebar-4 {
+    @include rem('margin-bottom', 15px);
+}
+
+/*- # Block Patterns.
+--------------------------------------------------------------*/
+.entry-thumb {
+    position: relative;
+}
+.entry-excerpt {
+    @include rem('margin-top', 17px);
+    @include rem('font-size', 14px);
+    color: #777777;
+}
+article.sticky {
+    .entry-title {
+        @include rem('padding-left', 15px);
+        position: relative;
+        hyphens: auto;
+        &:before {
+            content: "\f08d";
+            font-family: FontAwesome;
+            display: block;
+            @include rem('font-size', 16px);
+            color: $text;
+            position: absolute;
+            top: 4px;
+            left: 0px;
+        }
+    }
+}
+.entry-category {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: rgba(0,0,0,0.7);
+    color: #FFFFFF;
+    @include rem('font-size', 12px);
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 1px 10px;
+    &:hover {
+        background: $primary;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+}
+.block1_grid .entry-category{
+    bottom: 0;
+    left: 0;
+    top: auto;
+}
+.category .entry-category {
+    display: none;
+}
+
+/* # Block 1 - Recent Posts with list & grid layout
+--------------------------------------------------------------*/
+.block1_list {
+    article {
+        @include rem('padding-bottom', 25px);
+        border-bottom: 1px solid $border;
+        @include rem('margin-bottom', 25px);
+        position: relative;
+        &:hover {
+            .entry-title a{
+                color: $primary;
+                hyphens: auto;
+            }
+        }
+        &:last-of-type {
+            border-bottom: none;
+            padding-bottom: 0px;
+        }
+    }
+
+    .entry-thumb {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        //max-width: 250px;
+        @include rem('max-width', 250px);
+        @include media-breakpoint-down(md) {
+            //max-width: 120px;
+            @include rem('max-width', 120px);
+        }
+        @include media-breakpoint-down(md) {
+            //max-width: 80px;
+            @include rem('max-width', 80px);
+        }
+    }
+    .entry-detail {
+        //margin-left: 275px;
+        @include rem('margin-left', 275px);
+        @include media-breakpoint-up(md) {
+            //min-height: 180px;
+            @include rem('min-height', 170px);
+        }
+
+        @include media-breakpoint-down(md) {
+            //margin-left: 145px;
+            @include rem('margin-left', 145px);
+        }
+        @include media-breakpoint-down(md) {
+            //margin-left: 105px;
+            @include rem('margin-left', 105px);
+        }
+    }
+    .entry-detail.no-thumbnail {
+        margin-left: 0px;
+        min-height: auto;
+    }
+    .entry-title {
+        font-weight: 600;
+        hyphens: auto;
+        @include rem('font-size', 22px);
+        @include rem('margin-bottom', 3px);
+        @include media-breakpoint-down(md) {
+            @include rem('font-size', 19px);
+        }
+    }
+    .entry-excerpt {
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+    }
+}
+.block1_grid {
+    article {
+        @include rem('padding-bottom', 25px);
+        position: relative;
+        &:hover {
+            .entry-title a{
+                color: $primary;
+                hyphens: auto;
+            }
+        }
+        &:last-of-type {
+            border-bottom: none;
+        }
+    }
+
+    .entry-thumb {
+        @include rem('margin-bottom', 15px);
+        @include media-breakpoint-down(md) {
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .entry-detail {
+
+    }
+    .entry-title {
+        hyphens: auto;
+        font-weight: 600;
+        @include rem('font-size', 20px);
+        @include rem('margin-bottom', 3px);
+        @include media-breakpoint-down(md) {
+            @include rem('font-size', 19px);
+        }
+    }
+    .entry-excerpt {
+        @include rem('margin-top', 14px);
+    }
+}
+
+/* # Block 2 - Slider widget
+--------------------------------------------------------------*/
+.block2_widget {
+    .slider-item {
+        position: relative;
+    }
+    .slider-thumb {
+        a {
+            position: relative;
+            display: block;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .slider-content {
+        .meta-category {
+            text-transform: uppercase;
+            @include rem('padding', 1px 7px);
+            @include rem('font-size', 13px);
+            font-family: $font_heading;
+            background: $primary;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 10px;
+            a {
+                color: #FFFFFF;
+                letter-spacing: 0.7px;
+            }
+        }
+        @include media-breakpoint-up(md) {
+            background: transparent linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.8) 100%) repeat scroll 0 0;
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            @include rem('padding', 25px 25px);
+            .slider-title {
+                margin-bottom: 0px;
+                a {
+                    color: #FFF;
+                    font-weight: 900;
+                }
+            }
+        }
+        @include media-breakpoint-down(md) {
+            @include rem('margin-top', 20px);
+            .slider-title {
+                margin-bottom: 5px;
+            }
+        }
+        .slider-meta {
+            @include rem('margin-top', 5px);
+            .comments-link {
+                float: none;
+            }
+            @include media-breakpoint-up(md) {
+                .entry-meta {
+                    color: #FFF;
+                }
+                a {
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+    .slick-dots {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        position: absolute;
+        bottom: 23px;
+        right: 20px;
+        @include media-breakpoint-down(md) {
+            top: 10px;
+            right: 15px;
+        }
+        li {
+            cursor: pointer;
+            display: inline-block;
+            height: 10px;
+            margin: 0 3px;
+            padding: 0;
+            position: relative;
+            width: 10px;
+            button {
+                background: rgba(255,255,255,0.6);
+                border-radius: 100px;
+                border: 0 none;
+                color: transparent;
+                cursor: pointer;
+                display: block;
+                font-size: 0;
+                height: 10px;
+                line-height: 0;
+                outline: medium none;
+                padding: 2px;
+                width: 10px;
+                &:before {
+
+                }
+            }
+        }
+        li.slick-active button {
+            background: rgba(255,255,255,0.9);
+        }
+    }
+}
+
+/* # Block 3
+--------------------------------------------------------------*/
+.block3_widget {
+    .block-item {
+        @include rem('margin-bottom', 25px);
+        position: relative;
+    }
+    .block-thumb {
+        position: absolute;
+        top: 3px;
+        left: 0px;
+    }
+    .block-content {
+        margin-left: 110px;
+        min-height: 63px;
+        .block-title {
+            font-weight: 600;
+            margin-bottom: 0px;
+            hyphens: auto;
+        }
+        .block-meta {
+            line-height: 1;
+            margin-top: 8px;
+            @include rem('font-size', 11px);
+            color: $meta_color;
+        }
+    }
+}

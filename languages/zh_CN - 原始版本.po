@@ -1,0 +1,442 @@
+# Loco Gettext template
+msgid ""
+msgstr ""
+"Project-Id-Version: Codilight Lite\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Mon Nov 23 2015 01:06:12 GMT+0700 (ICT)\n"
+"POT-Revision-Date: Mon Nov 23 2015 01:06:15 GMT+0700 (ICT)\n"
+"PO-Revision-Date: 2016-05-30 23:22+0800\n"
+"Last-Translator: \n"
+"Language-Team: wordpress-life\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;__:1;"
+"_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;_x:1,2c;"
+"_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;esc_attr__:1;"
+"esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;esc_html_x:1,2c;"
+"comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:18
+msgid "Ooops... Error 404"
+msgstr "哇哇哇…… 遇到 404 错误"
+
+#: ../404.php:19
+msgid "Sorry, but the page you are looking for doesn't exist. "
+msgstr "对不起，你正在寻找的页面不存在。"
+
+#: ../404.php:24
+msgid "Maybe try a search?"
+msgstr "也许尝试搜索？"
+
+#: ../404.php:29
+msgid "Latest Posts"
+msgstr "最新的文章"
+
+#: ../comments.php:31
+#, php-format
+msgctxt "comments title"
+msgid "1 Comment"
+msgid_plural "%1$s comments"
+msgstr[0] "%1$s 人吐嘈"
+
+#: ../comments.php:39 ../comments.php:59
+msgid "Comment navigation"
+msgstr "评论导航"
+
+#: ../comments.php:42 ../comments.php:62
+msgid "Older Comments"
+msgstr "较早的评论"
+
+#: ../comments.php:43 ../comments.php:63
+msgid "Newer Comments"
+msgstr "更新的评论"
+
+#: ../comments.php:75
+msgid "Comments are closed."
+msgstr "抱歉，该页面评论已关闭。"
+
+#: ../footer.php:32
+#, php-format
+msgid "Copyright &copy; %1$s %2$s. All Rights Reserved."
+msgstr "版权所有 &copy; %1$s %2$s。保留所有权利。"
+
+#: ../footer.php:34
+#, php-format
+msgid "Codilight Theme by %1$s"
+msgstr "Codilight 主题汉化 by %1$s"
+
+#: ../functions.php:51
+msgid "Primary Menu"
+msgstr "主菜单"
+
+#: ../functions.php:52
+msgid "Footer Menu"
+msgstr "底部菜单"
+
+#: ../functions.php:101
+msgid "Default Sidebar"
+msgstr "默认侧边栏"
+
+#: ../functions.php:112
+msgid "Home 1"
+msgstr "首页第一个位置"
+
+#: ../functions.php:121
+msgid "Home 2"
+msgstr "首页第二个位置"
+
+#: ../functions.php:130
+msgid "Home 3"
+msgstr "首页第三个位置"
+
+#: ../functions.php:139
+msgid "Home 4"
+msgstr "首页第四个位置"
+
+#. Translators: If there are characters in your language that are not
+#. supported by merriweather, translate this to 'off'. Do not translate
+#. into your own language.
+#: ../functions.php:185
+msgctxt "Open Sans font: on or off"
+msgid "on"
+msgstr ""
+
+#. Translators: If there are characters in your language that are not
+#. supported by Raleway, translate this to 'off'. Do not translate
+#. into your own language.
+#: ../functions.php:191
+msgctxt "Raleway font: on or off"
+msgid "on"
+msgstr ""
+
+#: ../header.php:25
+msgid "Skip to content"
+msgstr "跳转到内容"
+
+#: ../search.php:20
+#, php-format
+msgid "Search Results for: %s"
+msgstr "搜索结果: %s"
+
+#. Name of the template
+msgid "Fullwidth"
+msgstr ""
+
+#. Name of the template
+msgid "Homepage"
+msgstr ""
+
+#: ../inc/customizer-controls.php:52
+msgid ""
+"Upgrade to <a href=\"#\">OnePress Pro</a> to be able to change the section "
+"order and styling!"
+msgstr "升级到 <a href=\"#\">OnePress Pro</a>能够改变章节顺序和样式！"
+
+#: ../inc/customizer.php:43
+msgid "Site Logo"
+msgstr "网站LOGO"
+
+#: ../inc/customizer.php:45
+msgid "Your site logo"
+msgstr "你的网站LOGO"
+
+#: ../inc/customizer.php:56
+msgid "Site Layout"
+msgstr "网站布局"
+
+#: ../inc/customizer.php:66
+msgid "Default Sidebar Position"
+msgstr "默认侧边栏位置"
+
+#: ../inc/customizer.php:80
+msgid "Front Page Posts Layout"
+msgstr "首页布局"
+
+#: ../inc/customizer.php:94
+msgid "Archive Page Posts Layout"
+msgstr "归档页面布局"
+
+#: ../inc/customizer.php:101
+msgid "Category, Tag, Author, Archive Page ..."
+msgstr "分类、标签、作者、归档页面 ……"
+
+#: ../inc/dashboard.php:9
+#, php-format
+msgid "%s Theme Dashboard"
+msgstr "%s 的主题仪表盘"
+
+#: ../inc/dashboard.php:9
+#, php-format
+msgid "%s"
+msgstr "%s"
+
+#: ../inc/dashboard.php:17
+#, php-format
+msgid "Welcome to %1s - Version %2s"
+msgstr "欢迎来到 %1s - 版本 %2s"
+
+#: ../inc/dashboard.php:30
+#, php-format
+msgid ""
+"%s supports the Theme Customizer for all theme settings. Click \"Customize\" to "
+"start customize your site."
+msgstr "%s 支持主题定制进行全部的主题设置。点击“自定义”开始自定义您的网站。"
+
+#: ../inc/dashboard.php:32
+msgid "Start Customize"
+msgstr "开始自定义"
+
+#: ../inc/dashboard.php:37
+#, php-format
+msgid ""
+"Need any help to setup and configure %s? Please have a look at our "
+"documentations instructions."
+msgstr "安装和配置 %s 需要帮助？请看我们的文件说明。"
+
+#: ../inc/dashboard.php:39
+msgid "http://docs.famethemes.com/category/30-codilight-lite"
+msgstr "http://docs.famethemes.com/category/30-codilight-lite"
+
+#: ../inc/dashboard.php:39
+msgid "Online Documentation"
+msgstr "在线文档"
+
+#: ../inc/dashboard.php:44
+#, php-format
+msgid ""
+"Support for %s WordPress theme is conducted through the WordPress free theme "
+"support forum."
+msgstr "%s WordPress主题是通过WordPress免费主题支持论坛进行支持。"
+
+#: ../inc/dashboard.php:46
+msgid "https://wordpress.org/support/theme/codilight-lite"
+msgstr "https://wordpress.org/support/theme/codilight-lite"
+
+#: ../inc/template-tags.php:26
+#, php-format
+msgctxt "post date"
+msgid "%s"
+msgstr "%s"
+
+#: ../inc/template-tags.php:30
+#, php-format
+msgctxt "post author"
+msgid "%s"
+msgstr "%s"
+
+#: ../inc/template-tags.php:56
+msgid "Page"
+msgstr "页面"
+
+#: ../inc/template-tags.php:72
+#, php-format
+msgid "Page %1$s of %2$s"
+msgstr "页面 %1$s / %2$s"
+
+#: ../inc/template-tags.php:96
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "发布于 %s"
+
+#: ../inc/template-tags.php:101
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr " %s"
+
+#: ../inc/template-tags.php:124
+msgid "Categories"
+msgstr "分类"
+
+#: ../inc/template-tags.php:131
+msgid "Tags"
+msgstr "标签"
+
+#: ../inc/template-tags.php:160
+msgid "Pingback:"
+msgstr "自动引用通知："
+
+#: ../inc/template-tags.php:160
+msgid "(Edit)"
+msgstr "（编辑）"
+
+#: ../inc/template-tags.php:176
+msgid "Post author"
+msgstr "文章作者"
+
+#. translators: 1: date, 2: time
+#: ../inc/template-tags.php:182
+#, php-format
+msgid "%1$s"
+msgstr "%1$s"
+
+#: ../inc/template-tags.php:184
+msgid "Reply"
+msgstr "回复"
+
+#: ../inc/template-tags.php:185
+msgid "Edit"
+msgstr "编辑"
+
+#: ../inc/template-tags.php:190
+msgid "Your comment is awaiting moderation."
+msgstr "您的评论正在等待审核。"
+
+#: ../inc/widgets/block_1_widget.php:13
+msgid "Display posts with list or grid style for use on homepage."
+msgstr "首页上使用列表或网格样式的显示文章。"
+
+#: ../inc/widgets/block_1_widget.php:14
+msgid "FT Block 1 - Recent Posts"
+msgstr "FT Block 1 - 最近的帖子"
+
+#: ../inc/widgets/block_1_widget.php:186 ../inc/widgets/block_2_widget.php:181 ..
+#: /inc/widgets/block_3_widget.php:176 ../inc/widgets/block_4_widget.php:163
+msgid "Widget Title:"
+msgstr "小部件标题："
+
+#: ../inc/widgets/block_1_widget.php:190
+msgid "Posts block layout:"
+msgstr "文章分块布局："
+
+#: ../inc/widgets/block_1_widget.php:199 ../inc/widgets/block_2_widget.php:186 ..
+#: /inc/widgets/block_4_widget.php:168
+msgid "Multiselect Categories (all by default):"
+msgstr "多选分类（默认所有）："
+
+#: ../inc/widgets/block_1_widget.php:207 ../inc/widgets/block_2_widget.php:194 ..
+#: /inc/widgets/block_3_widget.php:188 ../inc/widgets/block_4_widget.php:176
+msgid "Number of posts to show:"
+msgstr "显示文章数量："
+
+#: ../inc/widgets/block_1_widget.php:212 ../inc/widgets/block_2_widget.php:200 ..
+#: /inc/widgets/block_3_widget.php:193 ../inc/widgets/block_4_widget.php:181
+msgid "Ignore Sticky Posts"
+msgstr "忽略置顶帖"
+
+#: ../inc/widgets/block_1_widget.php:215 ../inc/widgets/block_2_widget.php:203 ..
+#: /inc/widgets/block_3_widget.php:196 ../inc/widgets/block_4_widget.php:184
+msgid "Order By:"
+msgstr "排序："
+
+#: ../inc/widgets/block_1_widget.php:223 ../inc/widgets/block_2_widget.php:211 ..
+#: /inc/widgets/block_3_widget.php:204 ../inc/widgets/block_4_widget.php:192
+msgid ""
+"<strong>Upgrade To Pro:</strong> This is the Lite Version of this widget with "
+"only basic options. You can upgrade to <a target=\"_blank\" href=\"http://www."
+"famethemes.com/themes/codilight/\">Codilight Pro</a> for more features and "
+"options."
+msgstr ""
+"<strong>升级到专业版：</strong>这是这个小部件的精简版，只有基本的选项。你可以升"
+"级到<a target=\"_blank\" href=\"http://www.famethemes.com/themes/codilight/"
+"\">Codilight Pro</a>拥有更多的功能和选项。"
+
+#: ../inc/widgets/block_2_widget.php:13
+msgid "Slider posts widget for use on homepage."
+msgstr "首页上使用的滑动窗口小部件。"
+
+#: ../inc/widgets/block_2_widget.php:14
+msgid "FT Block 2 - Slider"
+msgstr "FT Block 2 - 滑块"
+
+#: ../inc/widgets/block_2_widget.php:196
+msgid "This widget only show posts has featured image."
+msgstr "这个窗口小部件只显示有特色图片的文章。"
+
+#: ../inc/widgets/block_3_widget.php:13
+msgid "Display a list of posts based on one parent category"
+msgstr "根据一个文章分类显示一个文章列表"
+
+#: ../inc/widgets/block_3_widget.php:14
+msgid "FT Block 3"
+msgstr "FT Block 3"
+
+#: ../inc/widgets/block_3_widget.php:180
+msgid "Block Category:"
+msgstr "区块分类"
+
+#: ../inc/widgets/block_4_widget.php:13
+msgid "Display a list of popular/lastest posts for use on sidebar."
+msgstr "在侧边栏上使用，显示热门/最新文章列表。"
+
+#: ../inc/widgets/block_4_widget.php:14
+msgid "FT Block 4"
+msgstr "FT Block 4"
+
+#: ../template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr "没有发现"
+
+#: ../template-parts/content-none.php:20
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "准备好发布你的第一篇文章了吗？<a href=\"%1$s\">从这里开始</a>。"
+
+#: ../template-parts/content-none.php:24
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"对不起，没有找到能够匹配您的搜索词的内容。请尝试再次使用一些不同的关键字。"
+
+#: ../template-parts/content-none.php:29
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching "
+"can help."
+msgstr "我们似乎不能找到你正在寻找的东西。也许搜索可以帮助你。"
+
+#: ../template-parts/content-page.php:21 ../template-parts/content-single.php:28 .
+#: template-parts/content.php:34
+msgid "Pages:"
+msgstr "页面："
+
+#. translators: %s: Name of current post
+#: ../template-parts/content-page.php:32
+#, php-format
+msgid "Edit %s"
+msgstr "编辑 %s"
+
+#: ../template-parts/content-single.php:45
+msgid "Previous article"
+msgstr "上一篇文章"
+
+#: ../template-parts/content-single.php:51
+msgid "Next article"
+msgstr "下一篇文章"
+
+#: ../template-parts/content.php:27
+#, php-format
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "继续阅读 %s <span class=\"meta-nav\">&rarr;</span>"
+
+#. Name of the theme
+msgid "Codilight Lite"
+msgstr "Codilight Lite"
+
+#. Theme URI of the theme
+msgid "http://www.famethemes.com/themes/codilight-lite"
+msgstr "http://www.famethemes.com/themes/codilight-lite"
+
+#. Description of the theme
+msgid ""
+"Codilight Lite is a news magazine style WordPress theme from FameThemes which "
+"is a perfect option to create any kind of magazine or blog websites."
+msgstr ""
+"codilight Lite是一个来自FameThemes的新闻杂志风格的WordPress主题，可以通过一个完"
+"美的选项来创建任何杂志或者博客网站。"
+
+#. Author of the theme
+msgid "FameThemes"
+msgstr "FameThemes"
+
+#. Author URI of the theme
+msgid "http://www.famethemes.com"
+msgstr "http://www.famethemes.com"

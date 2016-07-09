@@ -1,0 +1,104 @@
+// main: style.scss
+
+// Variables
+//--------------------------------------------------------
+
+// Text colors
+$text: 			#494949;
+$heading:       #333333;
+
+// Active color
+$primary: 		#46a28d;
+$secondary: 	#f55e4f;
+
+// Mics color
+$border:		#e9e9e9;
+$meta_color:	#999999;
+$meta_bg: 		#f8f9f9;
+
+// Fonts
+$font_text:      	 "Open Sans",Arial,sans-serif;
+$font_heading:       "Raleway",Helvetica,Arial,sans-serif;
+$monaco: 			 Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+
+// Space
+$base: 25px;
+$gut:  25px;
+
+// Mixins
+//--------------------------------------------------------
+
+// Media breakpoint
+@mixin media-breakpoint-up($device) {
+	@if $device == sm {
+		@media (min-width: 34em) { @content; }
+	}
+	@if $device == md {
+		@media (min-width: 48em) { @content; }
+	}
+	@if $device == lg {
+		@media (min-width: 62em) { @content; }
+	}
+	@if $device == xl {
+		@media (min-width: 75em) { @content; }
+	}
+}
+
+@mixin media-breakpoint-down($device) {
+	@if $device == sm {
+		@media (max-width: 33.9em) { @content; }
+	}
+	@if $device == md {
+		@media (max-width: 47.9em) { @content; }
+	}
+	@if $device == lg {
+		@media (max-width: 61.9em) { @content; }
+	}
+	@if $device == xl {
+		@media (max-width: 74.9em) { @content; }
+	}
+}
+
+// Use rem for better responsive
+$baseline-px: 16px;
+@mixin rem($property, $px-values) {
+
+	$baseline-rem: $baseline-px / 1rem;
+
+	#{$property}: $px-values;
+
+	@if type-of($px-values) == "number" {
+		#{$property}: $px-values / $baseline-rem; }
+	@else {
+		$rem-values: unquote("");
+		@each $value in $px-values {
+			@if $value == 0 {
+				$rem-values: append($rem-values, $value); }
+			@else {
+				$rem-values: append($rem-values, $value / $baseline-rem); } }
+		#{$property}: $rem-values; }
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+@mixin border-radius($radius: 2px) {
+	-webkit-border-radius:  $radius;
+		-moz-border-radius: $radius;
+			border-radius:  $radius;
+}

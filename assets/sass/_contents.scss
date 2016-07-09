@@ -1,0 +1,14 @@
+// main: style.scss
+/* Entry Content Stuffs
+--------------------------------------------------------------*/
+.entry-content {
+    @include rem('margin-top', 25px);
+    @include rem('margin-bottom', 25px);
+    ul li, ol li {
+        @include rem('margin-bottom', 5px);
+    }
+}
+
+.entry-title {
+    hyphens: auto;
+}
