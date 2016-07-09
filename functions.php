@@ -933,7 +933,7 @@ function	register_shortcodes() {
 add_action('init','register_shortcodes');
 
 
-//保护后台登录，除了这个地址其他的都不能登陆: http://www.wordpressleaf.com/wp-login.php?love=wordpress
+//保护后台登录，除了这个地址其他的都不能登陆: http://www.wordpressleaf.com/wp-login.php?love=wordpress，请使用私人的代码，并牢牢记住。
 if (leaf_get_option('leaf_admin')){
 add_action('login_enqueue_scripts','login_protection');  
 }
