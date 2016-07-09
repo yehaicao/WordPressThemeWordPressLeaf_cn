@@ -865,7 +865,7 @@ function  demo_function($atts, $content = null) {
 	$href = trim($href) ? trim($href) :  'http://www.wordpressleaf.com';
   $leaf = trim($leaf) ? trim($leaf) :  'leaf';
 	
-	$return_string='<a rel="nofollow" class="leafdl" href="'.$href.'"><i class="fa fa-'.$leaf.'"></i>  '.$content.'</a>';
+	$return_string='<a rel="nofollow" target="_blank" class="leafdl" href="'.$href.'"><i class="fa fa-'.$leaf.'"></i>  '.$content.'</a>';
 	
 	return $return_string;
 	}
@@ -882,7 +882,7 @@ function  download_local_function($atts, $content = null) {
   $leaf = trim($leaf) ? trim($leaf) :  'cloud-download';
 
 	
-	$return_string='<a rel="nofollow" class="leafdl" href="'.$href.'"><i class="fa fa-'.$leaf.'"></i>  '.$content.'</a>';
+	$return_string='<a rel="nofollow" target="_blank" class="leafdl" href="'.$href.'"><i class="fa fa-'.$leaf.'"></i>  '.$content.'</a>';
 	
 	return $return_string;
 	}
@@ -900,7 +900,7 @@ function  download_baidu_function($atts, $content = null) {
   $leaf = trim($leaf) ? trim($leaf) :  'paw';	
 
 	
-	$return_string='<a rel="nofollow" class="leafdl" href="'.$href.'"><i class="fa fa-'.$leaf.'"></i>  '.$content.'</a>';
+	$return_string='<a rel="nofollow" target="_blank" class="leafdl" href="'.$href.'"><i class="fa fa-'.$leaf.'"></i>  '.$content.'</a>';
 	
 	return $return_string;
 	}
@@ -916,7 +916,7 @@ function  download_github_function($atts, $content = null) {
 	$href = trim($href) ? trim($href) :  'http://www.wordpressleaf.com';
   $leaf = trim($leaf) ? trim($leaf) :  'github';	
 	
-	$return_string='<a rel="nofollow" class="leafdl" href="'.$href.'"><i class="fa fa-'.$leaf.'"></i>  '.$content.'</a>';
+	$return_string='<a rel="nofollow" target="_blank" class="leafdl" href="'.$href.'"><i class="fa fa-'.$leaf.'"></i>  '.$content.'</a>';
 	
 	return $return_string;
 	}	
