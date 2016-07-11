@@ -944,6 +944,20 @@ function login_protection(){
     if($_GET['love'] != $leaf_admin_addr)header('Location: '.home_url('/'));  
 }
 
+//改变标签云的数量等参数
+add_filter( 'widget_tag_cloud_args', 'theme_tag_cloud_args' );
+function theme_tag_cloud_args( $args ){
+	$newargs = array(
+		'number'      => 20,     //显示个数
+		'orderby'     => 'count',//排序字段，可以是name或count
+		'order'       => 'ASC', //升序或降序，ASC或DESC
+		'exclude'     => null,   //结果中排除某些标签
+		'include'     => null,  //结果中只包含这些标签
+	);
+	$return = array_merge( $args, $newargs);
+	return $return;
+}
+
 
 
 
