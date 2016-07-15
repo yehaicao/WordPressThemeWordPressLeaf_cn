@@ -5,7 +5,7 @@ Theme URI: http://www.WordPressLeaf.com/
 Author: WordPressLeaf
 Author URI: http://www.WordPressLeaf.com/
 Description: WordPressLeaf is a news magazine style WordPress theme from WordPressLeaf.com which is a perfect option to create any kind of magazine or blog websites.
-Version: 1.0.2
+Version: 1.0.3
 Text Domain: codilight-lite
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -3254,13 +3254,13 @@ article.sticky .entry-title:before {
 	font-weight: 500;
 	margin-bottom: 0px;
 	hyphens: auto;
-	height: 45px;
+	height: 41px;
   overflow: hidden;
 }
 
 .block3_widget .block-content .block-meta {
 	line-height: 1;
-	margin-top: 8px;
+	margin-top: 11px;
 	font-size: 11px;
 	font-size: 0.6875rem;
 	color: #999999;
