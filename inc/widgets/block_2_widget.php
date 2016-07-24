@@ -117,7 +117,9 @@ class Codilight_Lite_Widget_Block_2_Slider extends WP_Widget {
 					slidesToScroll: 1,
 					draggable: true,
 					dots : true,
-					arrows : false
+					arrows : false,
+					autoplay: true,
+          autoplaySpeed: 2000
 				});
 			});
 		</script>
