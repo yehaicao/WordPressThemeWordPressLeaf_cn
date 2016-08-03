@@ -220,7 +220,9 @@ function codilight_lite_scripts() {
 	wp_enqueue_script( 'codilight-lite-weixin', get_template_directory_uri() . '/assets/js/weixin.js', array(), '20160613',true);
 	wp_enqueue_script( 'codilight-lite-prettify', get_template_directory_uri() . '/assets/google-code-prettify/prettify.js?', array(), '20120531');
 
-
+	if (!is_front_page()){
+  wp_enqueue_script( 'codilight-lite-sidebar', get_template_directory_uri() . '/assets/js/theia-sticky-sidebar.js?', array(), '20160803');
+  }//如果不是静态首页，那么侧边栏就滚动
 
 
 

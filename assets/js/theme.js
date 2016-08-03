@@ -62,3 +62,10 @@
 ( function() {
     jQuery('body').fitVids();
 })();
+
+jQuery(document).ready(function() {
+    jQuery('#secondary').theiaStickySidebar({
+      // Settings
+      additionalMarginTop: 30
+    });
+  });
