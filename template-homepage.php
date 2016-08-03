@@ -28,6 +28,7 @@ get_header(); ?>
 	<div id="content" class="site-content container <?php echo codilight_lite_sidebar_position(); ?>">
 
 		<div class="content-inside">
+			<div class="content-side">
 			<div id="primary" class="content-area">
 
 				<?php if ( $paged < 2 ) { ?>
@@ -73,7 +74,11 @@ get_header(); ?>
 
 			<?php get_sidebar(); ?>
 			
+      </div><!-- content-side -->
+			
 			<div class="clear"></div>
+			
+
 
 			<?php if ( is_active_sidebar( 'home-5' ) ) { ?>
 			<div class="home-sidebar home-sidebar-6">

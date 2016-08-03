@@ -68,4 +68,8 @@ jQuery(document).ready(function() {
       // Settings
       additionalMarginTop: 30
     });
+    jQuery('#primary').theiaStickySidebar({
+      // Settings
+      additionalMarginTop: 30
+    });
   });
