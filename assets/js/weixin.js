@@ -11,12 +11,30 @@
   Issues: http://www.wordpressleaf.com
 
  */
-
+function getRootPath_dc() {
+	          //截取掉root从首字母起长度为1的字符串，将剩余字符串赋值给pathName，意思就是将第一个/去掉。
+            var pathName = window.location.pathname.substring(1);
+            
+            //如果是首页网址，那么webName 为空，如果是目录页，就查找出目录的名字。
+            var webName = pathName == '' ? '' : pathName.substring(0, pathName.indexOf('/'));
+            if (webName == "") {
+                return window.location.protocol + '//' + window.location.host;
+            }
+            else {
+            	  return window.location.protocol + '//' + window.location.host;
+                //return window.location.protocol + '//' + window.location.host + '/' + webName;
+            }
+        };
 
 jQuery(document).ready(function() {
 
   //二维码图片地址
-  var imgurl='http://www.wordpressleaf.com/wp-content/themes/wordpressleaf/assets/images/weixin.png';
+  
+
+  
+  var imgurl=getRootPath_dc()+ '/wp-content/themes/wordpressleaf/assets/images/weixin.png';
+  
+  //var imgurl='http://www.wordpressleaf.com/wp-content/themes/wordpressleaf/assets/images/weixin.png';
 
 	var main = jQuery('<div></div>'); //创建一个父DIV
 	main.attr('id', 'leaf_weixin_share'); //给父DIV设置ID
@@ -96,3 +114,5 @@ jQuery(document).ready(function() {
 
 
 });
+
+
