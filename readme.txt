@@ -1,4 +1,4 @@
-中文免费WordPressLeaf主题 1.0.0
+中文免费WordPressLeaf主题 1.1.1
 
 WordPressLeaf是一个干净、具有现代感、完全响应式设计的免费的wordpress主题。
 
