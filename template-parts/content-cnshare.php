@@ -1,7 +1,18 @@
+<?php 
+$url=urlencode(esc_url( get_permalink() )); 
+$title=urlencode(get_the_title());
+if ( has_post_thumbnail( ) ) {
+    $thumbnail=urlencode(get_the_post_thumbnail_url($post->ID,'codilight_lite_single_medium'));
+}else{
+	  $thumbnail='';
+}
+$desc=urlencode(strip_tags(codilight_lite_excerpt(60)));
+?>
+
 <div class="entry-share">
 	<ul class="cnrrssb-buttons cnrrssb-1">
 		<li class="cnrrssb-weibo" >
-			<a target="_blank" rel="nofollow" href="http://v.t.sina.com.cn/share/share.php?appkey=3036462609&url=<?php echo esc_url( get_permalink() ); ?>&title=<?php the_title(); ?>&pic=<?php if ( has_post_thumbnail( ) ) { the_post_thumbnail_url('codilight_lite_single_medium' );} ?>&searchPic=true" class="popup" >
+			<a target="_blank" rel="nofollow" href="http://v.t.sina.com.cn/share/share.php?appkey=3036462609&url=<?php echo $url; ?>&title=<?php echo $title; ?>&pic=<?php echo $thumbnail; ?>&searchPic=true" class="popup">
 				<span class="cnrrssb-icon">
 					<i class="fa fa-weibo"></i>
 				</span>
@@ -9,7 +20,7 @@
 			</a>
 		</li>
 		<li class="cnrrssb-qqstar"  >
-			<a target="_blank" rel="nofollow" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=<?php echo esc_url( get_permalink() ); ?>&title=<?php the_title(); ?>&desc=&summary=<?php echo strip_tags(codilight_lite_excerpt(60)); ?>&pics=<?php if ( has_post_thumbnail( ) ) { echo esc_url( the_post_thumbnail_url('codilight_lite_single_medium' ));} ?>&site=" class="popup">
+			<a target="_blank" rel="nofollow" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=<?php echo $url; ?>&title=<?php echo $title; ?>&desc=&summary=<?php echo $desc; ?>&pics=<?php echo $thumbnail;?>&site=" class="popup">
 				<span class="cnrrssb-icon">
 					<i class="fa fa-star"></i>
 				</span>
@@ -17,14 +28,14 @@
 			</a>
 		</li>
 		<li class="cnrrssb-ttweibo">
-			<a target="_blank" rel="nofollow" href="http://share.v.t.qq.com/index.php?c=share&a=index&title=<?php the_title(); ?>&url=<?php echo esc_url( get_permalink() ); ?>&appkey=801497376&pic=<?php if ( has_post_thumbnail( ) ) { echo esc_url( the_post_thumbnail_url('codilight_lite_single_medium' ));} ?>&site=" class="popup">
+			<a target="_blank" rel="nofollow" href="http://share.v.t.qq.com/index.php?c=share&a=index&title=<?php echo $title; ?>&url=<?php echo $url; ?>&appkey=801497376&pic=<?php echo $thumbnail; ?>&site=" class="popup">
 				<span class="cnrrssb-icon">
 					<i class="fa fa-tencent-weibo"></i>
 				</span>
 				<span class="cnrrssb-text">腾讯微博</span>
 			</a></li>
 			<li class="cnrrssb-qq" >
-				<a target="_blank" rel="nofollow" href="http://connect.qq.com/widget/shareqq/index.html?url=<?php echo esc_url( get_permalink() ); ?>&title=<?php the_title(); ?>&desc=&summary=<?php echo strip_tags(codilight_lite_excerpt(60)); ?>&pics=<?php if ( has_post_thumbnail( ) ) { echo esc_url( the_post_thumbnail_url('codilight_lite_single_medium' ));} ?>&site=baidu">
+				<a target="_blank" rel="nofollow" href="http://connect.qq.com/widget/shareqq/index.html?url=<?php echo $url; ?>&title=<?php echo $title; ?>&desc=&summary=<?php echo $desc; ?>&pics=<?php echo $thumbnail; ?>&site=baidu">
 					<span class="cnrrssb-icon">
 						<i class="fa fa-qq"></i>
 					</span>
@@ -40,7 +51,7 @@
 				</a>
 			</li>
 			<li class="cnrrssb-renren small" >
-				<a target="_blank" rel="nofollow" href="http://widget.renren.com/dialog/share?resourceUrl=<?php echo esc_url( get_permalink() ); ?>&srcUrl=<?php echo esc_url( get_permalink() ); ?>&title=<?php the_title(); ?>&pic=<?php if ( has_post_thumbnail( ) ) { the_post_thumbnail_url('codilight_lite_single_medium' );} ?>&description=<?php echo strip_tags(codilight_lite_excerpt(60)); ?>" class="popup">
+				<a target="_blank" rel="nofollow" href="http://widget.renren.com/dialog/share?resourceUrl=<?php echo $url; ?>&srcUrl=<?php echo $url; ?>&title=<?php echo $title; ?>&pic=<?php echo $thumbnail;  ?>&description=<?php echo $desc; ?>" class="popup">
 					<span class="cnrrssb-icon">
 						<i class="fa fa-renren"></i>
 					</span>
@@ -56,7 +67,7 @@
 				</a>
 			</li>
 			<li class="cnrrssb-email small" >
-				<a target="_blank" rel="nofollow" href="mailto:?subject=<?php the_title(); ?>&body=<?php echo esc_url( get_permalink() ); ?>">
+				<a target="_blank" rel="nofollow" href="mailto:?subject=<?php echo $title; ?>&body=<?php echo $url; ?>">
 					<span class="cnrrssb-icon">
 						<i class="fa fa-envelope"></i>
 					</span>
