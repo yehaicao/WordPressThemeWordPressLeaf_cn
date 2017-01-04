@@ -223,7 +223,10 @@ function codilight_lite_scripts() {
  //侧边栏滚动
   wp_enqueue_script( 'codilight-lite-sidebar', get_template_directory_uri() . '/assets/js/theia-sticky-sidebar.js?', array(), '20160803');
 
-
+	wp_enqueue_script( 'codilight-lite-html5shiv-ie9', get_template_directory_uri() . '/assets/js/html5shiv.min.js', array(), '20161230' );
+  wp_script_add_data( 'codilight-lite-html5shiv-ie9', 'conditional', 'lt IE 9' );    
+  wp_enqueue_script( 'codilight-lite-respond-ie9', get_template_directory_uri() . '/assets/js/respond.min.js', array(), '20161230' );
+  wp_script_add_data( 'codilight-lite-respond-ie9', 'conditional', 'lt IE 9' ); 	
 
 
 
